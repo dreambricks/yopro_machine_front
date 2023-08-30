@@ -1,0 +1,88 @@
+.father{
+  min-height: 100vh;
+  background-image: url('../../assets/images/hnk_bg.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.example-header {
+  min-height: 64px;
+  padding: 0px 24px 0;
+}
+
+.filterInput {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0)
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled){
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 36px;
+  color: white;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+h1, mat-header-cell,mat-cell, mat-form-field, mat-paginator  {
+    font-family: 'Heineken', sans-serif !important;  /* Use o mesmo nome escolhido acima */
+}
+
+
+mat-header-cell{
+  font-size: 18px;
+  color: #00fe4c;
+}
+
+mat-cell{
+  color: white;
+  font-size: 16px;
+}
+
+mat-table{
+  background-color: rgba(0, 0, 0, 0)
+}
+
+mat-paginator{
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.iconArrow {
+  position: absolute;
+  top: 93%;
+  left: 1.5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
