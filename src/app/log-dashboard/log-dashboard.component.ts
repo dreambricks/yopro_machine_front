@@ -13,7 +13,7 @@ import { MatTableDataSource }  from '@angular/material/table'
 })
 export class LogDashboardComponent implements OnInit {
 
-  displayedColumns: string[] = ['barName','timePlayed', 'uploadedData', 'status', 'hits', 'miss'];
+  displayedColumns: string[] = ['timePlayed', 'uploadedData', 'status'];
   dataSource!: MatTableDataSource<DataLog>; 
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -41,9 +41,6 @@ export class LogDashboardComponent implements OnInit {
 }
 
 export interface DataLog {
-  barName: string;
   timePlayed: string;
   status: string;
-  hits: string;
-  miss: string;
 }

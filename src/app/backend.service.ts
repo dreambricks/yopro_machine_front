@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BackendService {
-  private baseUrl = 'http://localhost:8080/api'; // Altere para a URL do seu backend
+  private baseUrl = 'http://15.229.14.115:8080/api'; // Altere para a URL do seu backend
 
   constructor(private http: HttpClient) { }
 
@@ -35,13 +35,5 @@ export class BackendService {
     return this.http.get(url);
   }
 
-  getLastUpdateByBarName(barName: string): Observable<any>{
-    const url = `${this.baseUrl}/datalogs/latest-uploaded?barName=${barName}`;
-    return this.http.get(url);
-  }
 
-  // getStatusCountByBarNameAndData(barName: string, startDate:string, endDate:string): Observable<any>{
-  //   const url = `${this.baseUrl}/datalogs/status/count?barName=${barName}&startDate=${startDate}&endDate=${endDate}`;
-  //   return this.http.get(url);
-  // }
 }

@@ -17,11 +17,6 @@
 
       <mat-table [dataSource]="dataSource" matSort>
 
-        <!-- ID Column -->
-        <ng-container matColumnDef="barName">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Nome do Bar </mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.barName}} </mat-cell>
-        </ng-container>
 
         <ng-container matColumnDef="timePlayed">
           <mat-header-cell *matHeaderCellDef mat-sort-header> Data do jogo </mat-header-cell>
@@ -37,17 +32,6 @@
           <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.status}} </mat-cell>
         </ng-container>
-
-        <ng-container matColumnDef="hits">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Acertos </mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.hits}} </mat-cell>
-        </ng-container>
-
-        <ng-container matColumnDef="miss">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Erros </mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.miss}} </mat-cell>
-        </ng-container>
-
 
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;">
