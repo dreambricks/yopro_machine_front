@@ -14,9 +14,18 @@
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
             </mat-card-content>
-            <mat-card-content>
+            <mat-card-content class="content">
                 <p>Ultima atualização: {{lastUpdateTotal | dateFormat }}</p>
             </mat-card-content>
+
+            <mat-card-content class="icondownload">
+                <a href="http://15.229.14.115:8080/api/players/download">
+                    <i class="fa-regular fa-file-zipper icond"></i>
+                </a>
+            </mat-card-content>
+            
+
+
         </mat-card>
 
     </div>

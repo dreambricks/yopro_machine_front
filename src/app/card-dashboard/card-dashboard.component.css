@@ -18,6 +18,12 @@ mat-card {
     flex-direction: column;
 }
 
+.icondownload{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
 
 .father {
     display: flex;
@@ -61,6 +67,13 @@ P {
     font-size: 30px;
     color: white;
     cursor: pointer;
+}
+
+.icond {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    justify-self: center;
 }
 
 .iconArrow {
